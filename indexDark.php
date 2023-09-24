@@ -1,4 +1,5 @@
 <?php
+include "post.php";
 //Aumanter (A+) e diminuir(A-);
 
 // Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
@@ -194,7 +195,7 @@ echo '<!DOCTYPE html>
             <div class="post-area">
                 <div class="post">
                     <div class="top-section">
-
+                        
                         <div class="user-info">
                             <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
                             <div class="user-text-info">
@@ -214,12 +215,9 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="content">
-                        <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                        </div>
+                        <div class="text-area">'
+                        . post(1) . 
+                        '</div>
 
                         <img src="ASSETS/sample_image.jpg" alt="Post Image" class="img-area">
 

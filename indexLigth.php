@@ -1,5 +1,7 @@
 <?php
 include "post.php";
+
+
 //Aumanter (A+) e diminuir(A-);
 
 // Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
@@ -16,9 +18,9 @@ if (isset($_GET['aumentar'])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = "sua duvida foi postada com sucesso ";
-    echo "<script>alert('$mensagem');</script>";
+    //echo "<script>alert('$mensagem');</script>";
 
-
+ //$post = post();
 }
 
 
@@ -38,7 +40,7 @@ echo '<!DOCTYPE html>
     <!-- CSS & JS -->
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
-    <link rel="stylesheet" href="CSS/sidebar_closed.css">
+    
     <script defer src="JS/script.js"></script>
     <style>
         body {
@@ -47,7 +49,6 @@ echo '<!DOCTYPE html>
     </style>
 
 </head>
-
 <body class="">
     <nav class="sidebar">
         <header class="not-selectable">
@@ -163,7 +164,7 @@ echo '<!DOCTYPE html>
                 </div>
             </div>
 
-            <form method="post">
+            <form action="inserirDuvidaNoBd.php" method="POST">
                 <div class="action-post">
                     <div class="text-field">
                         <div class="field-wrapper">
@@ -200,7 +201,7 @@ echo '<!DOCTYPE html>
                                     <span class="username">Username</span>
                                     <div class="forum-posted">
                                         <i class="material-symbols-outlined course-icon">computer</i>
-                                        <span class="course">Informática</span>
+                                        <span class="course"></span>
                                     </div>
                                 </div>
                                 <div class="post-info-section">Postado em 09/05/2024 às 07:52</div>
@@ -212,9 +213,9 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="content">
-                        <div class="text-area">
-                        ola
-                        </div>
+                        <div class="text-area">'
+                        . post(1) . 
+                        '</div>
                         <img src="ASSETS/sample_image.jpg" alt="Post Image" class="img-area">
                     </div>
                     <div class="actions">
@@ -252,12 +253,9 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="content">
-                        <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                        </div>
+                        <div class="text-area">'
+                        . post(2) .
+                        '</div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
 
@@ -297,12 +295,9 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="content">
-                        <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                        </div>
+                        <div class="text-area">'
+                            .post(3) .
+                        '</div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
 

@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Imprima os resultados
     foreach ($resultArray as $row) {
-        echo $row["duvida"] . "<br>";
+        echo "<h1>".$row["duvida"] ."</h1><br>";
     }
     //print_r($resultArray);
 
@@ -41,4 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Método GET não suportado!";
 }
+
+
 ?>
