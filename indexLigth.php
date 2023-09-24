@@ -1,4 +1,5 @@
 <?php
+include "post.php";
 //Aumanter (A+) e diminuir(A-);
 
 // Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
@@ -16,6 +17,7 @@ if (isset($_GET['aumentar'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = "sua duvida foi postada com sucesso ";
     echo "<script>alert('$mensagem');</script>";
+
 
 }
 
@@ -38,7 +40,6 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/sidebar_closed.css">
     <script defer src="JS/script.js"></script>
-    <iframe src="php/post.php"></iframe>
     <style>
         body {
             font-size: ' . $tamanhoFonte . 'px;
@@ -212,14 +213,9 @@ echo '<!DOCTYPE html>
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                        ola
                         </div>
-
                         <img src="ASSETS/sample_image.jpg" alt="Post Image" class="img-area">
-
                     </div>
                     <div class="actions">
                         <div class="left">

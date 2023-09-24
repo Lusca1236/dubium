@@ -28,13 +28,13 @@ if (empty($senha)) {
     $erroSenha = "Senha de tamanho invalido, digite uma senha valida";
 }
 
-
-
 //Nenhum erro foi encontrado;
 if (empty($errocpf) && empty($erroSenha)) {
     header("location:indexLigth.php");
     exit;
 }
+
+
 
 ?>
 

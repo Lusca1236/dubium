@@ -38,7 +38,6 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/sidebar_closed.css">
     <script defer src="JS/script.js"></script>
-    <iframe src="php/post.php"></iframe>
     <style>
         body {
             font-size: ' . $tamanhoFonte . 'px;
@@ -144,9 +143,11 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="mid-buttons">
+                    <form method="post" action="pesquisa.php">
                         <div class="search-bar">
                             <i class="material-symbols-outlined search-btn btn-sm not-selectable">search</i>
-                            <input type="text" class="search-tool borderless" placeholder="Como usar o SIGAA?">
+                            <input type="text" name ="pesquisa" class="search-tool borderless" placeholder="Como usar o SIGAA?">
+                    </form>
                         </div>
 
                         <div class="buttons not-selectable">
