@@ -141,18 +141,18 @@ echo '<!DOCTYPE html>
                         <i class="material-symbols-outlined btn-sm">help</i>
                         <a href="indexDark.php" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm light-dark-btn light-mode">light_mode</i></a>
                     </div>
-
+                <form method="post" action="Pesquisa.php">
                     <div class="mid-buttons">
                         <div class="search-bar">
                             <i class="material-symbols-outlined search-btn btn-sm not-selectable">search</i>
-                            <input type="text" class="search-tool borderless" placeholder="Como usar o SIGAA?">
+                            <input type="text" name ="pesquisa" class="search-tool borderless" placeholder="Como usar o SIGAA?">
                         </div>
 
                         <div class="buttons not-selectable">
                             <a href="?aumentar" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm">text_increase</i></a>
                             <a href="?diminuir" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm">text_decrease</i></a>
                         </div>
-
+                </form>
                     </div>
 
                     <div class="right-buttons not-selectable">

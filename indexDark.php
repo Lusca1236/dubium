@@ -143,7 +143,7 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="mid-buttons">
-                    <form method="post" action="pesquisa.php">
+                    <form method="post" action="Pesquisa.php">
                         <div class="search-bar">
                             <i class="material-symbols-outlined search-btn btn-sm not-selectable">search</i>
                             <input type="text" name ="pesquisa" class="search-tool borderless" placeholder="Como usar o SIGAA?">
